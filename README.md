@@ -31,7 +31,7 @@ This project demonstrates a hardened Apache web server configuration implementin
 ## How to Use
 
 1. Copy configuration to Apache:
-/etc/apache2/sites-available/app.conf
+sudo cp apache/app.conf /etc/apache2/sites-available/app.conf
 
 2. Enable required modules:
 ```bash
@@ -43,6 +43,4 @@ systemctl restart apache2
 systemctl restart apache2
 
 4. Run security test
-```bash
-chmod +x tests/security-tests.sh
 ./tests/security-tests.sh
