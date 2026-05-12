@@ -39,5 +39,5 @@ a2enmod headers
 3. Restart Apache:
 systemctl restart apache2
 
-4. Run security test
+4. Run security test:
 ./tests/security-tests.sh
