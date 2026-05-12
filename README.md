@@ -9,7 +9,7 @@ This project demonstrates a hardened Apache web server configuration implementin
 ## Features
 
 - Security headers (CSP, HSTS, X-Frame-Options, nosniff)
-- HTTP method restriction (GET, POST, HEAD only)
+- Restrict allowed HTTP methods (GET, POST, HEAD)
 - IP allowlist and deny rules
 - Server fingerprint hiding
 - Directory listing disabled
@@ -22,7 +22,7 @@ This project demonstrates a hardened Apache web server configuration implementin
 - Cross-Site Scripting (XSS)
 - Clickjacking
 - MIME sniffing attacks
-- Unauthorized network access
+- Unauthorized access (IP-based restrictions)
 - HTTP method abuse
 - Server information leakage
 
@@ -34,12 +34,9 @@ This project demonstrates a hardened Apache web server configuration implementin
 sudo cp apache/app.conf /etc/apache2/sites-available/app.conf
 
 2. Enable required modules:
-```bash
 a2enmod headers
-systemctl restart apache2
 
 3. Restart Apache:
-```bash
 systemctl restart apache2
 
 4. Run security test
