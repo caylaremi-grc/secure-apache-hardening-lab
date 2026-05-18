@@ -1,3 +1,5 @@
+# Server configuration
+
 ServerTokens Prod
 ServerSignature Off
 TraceEnable Off
