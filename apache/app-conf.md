@@ -1,9 +1,9 @@
 # Server configuration
 
-ServerTokens Prod
-ServerSignature Off
-TraceEnable Off
-FileETag MTime Size
+ ServerTokens Prod
+ ServerSignature Off
+ TraceEnable Off
+ FileETag MTime Size
 
 <VirtualHost *:80>
 
